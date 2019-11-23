@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: geo-reverse-service
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 8087
+geo:
+  reverse:
+    service:
+      index:
+        includes: DE
+        excludes: ES
+        location: ${user.home}/${spring.application.name}/index/geodata.index
+      data:
+        adminCodes1: data/admin1Codes.txt
+        adminCodes2: data/admin2Codes.txt
+        cities: data/cities1000.txt
+        countryInfo: data/countryInfo.txt
+      defaults:
+        maxDistanceMeters: 1500
+        maxHits: 50
