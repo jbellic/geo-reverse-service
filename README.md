@@ -6,7 +6,7 @@
 - Possibility to regenerate custom index with excluding countries (wip)
 - Easy to use API 
 
-This implementation is used within the project **Bluecate** for mapping bluetooth low energy geo position to tracking information.
+This implementation is used within the project **Bluecate** for mapping bluetooth low energy device geo position data to readable tracking information.
 
 ### Parametres
 - latitude
